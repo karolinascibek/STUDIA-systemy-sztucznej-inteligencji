@@ -29,7 +29,11 @@ class DecisionSystem():
             raise ValueError(" -- Nieparwidłowa ścieżka do pliku")
 
     def samples_str_to_number(self, samples):
-        return np.array(samples, dtype="f")
+        try:
+            return np.array(samples, dtype="f")
+        except :
+            print("Error: Nie można konwertować tablicy z str do float, znajdują się elementy znakowe lub textowe")
+
 
     def load_samples(self, path, separator=None):
         self.__samples = self.__load_data(path, separator)

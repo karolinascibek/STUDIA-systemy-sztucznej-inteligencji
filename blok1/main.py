@@ -1,5 +1,7 @@
 from blok1.lab1.decision_system import DecisionSystem
 from blok1.lab3.k_means import KMeans
+from  blok1.lab4.one_plus_one import OnePlusOne
+from blok1.lab3.c_means import CMeans
 
 
 system = DecisionSystem()
@@ -8,6 +10,7 @@ system = DecisionSystem()
 
 # system.load_samples("lab1/wartosci.txt")
 # system.load_headers("lab1/atrybuty.txt")
+#
 # system.display()
 
 
@@ -26,12 +29,21 @@ system.load_headers("lab3/spirala-type.txt", ',')
 # system.display()
 
 # -- lab3.1 --
-# samples = system.get_samples()
-# samples_cov_to_number = system.samples_str_to_number(samples)
+samples = system.get_samples()
+samples_cov_to_number = system.samples_str_to_number(samples)
 # print(samples_cov_to_number)
 
 # -- lab3.2 --
-samples = system.get_samples()
-samples_cov_to_number = system.samples_str_to_number(samples)
-alg = KMeans(samples_cov_to_number)
-alg.k_means(iterations=11, m=4)
+# samples = system.get_samples()
+# samples_cov_to_number = system.samples_str_to_number(samples)
+
+# alg = KMeans(samples_cov_to_number)
+# alg.k_means(iterations=11, m=4)
+
+fcm = CMeans(samples_cov_to_number)
+fcm.c_means(3, iterations=30)
+
+# lab 4
+# opo = OnePlusOne()
+# opo.one_plus_one()
+

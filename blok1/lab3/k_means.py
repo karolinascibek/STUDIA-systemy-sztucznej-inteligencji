@@ -7,8 +7,9 @@ import matplotlib.pyplot as plt
 class KMeans():
     def __init__(self, samples):
         self.samples = samples
+        self.iteracja = 0
 
-    def calculate_distances_between_points(self, x1, x2, y1, y2):
+    def metrics_euklidesowa(self, x1, x2, y1, y2):
         return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
     def alg(self, centers):
@@ -23,9 +24,9 @@ class KMeans():
             idx_group = 0
 
             # wylicz dleglosc miedzy probka s a każdym środkiem grupy V
-            distant = self.calculate_distances_between_points(s[0], first_center[0], s[1], first_center[1])
+            distant = self.metrics_euklidesowa(s[0], first_center[0], s[1], first_center[1])
             for idx_c, center in enumerate(centers_group[1: len(centers_group)]):
-                temp = self.calculate_distances_between_points(s[0], center[0], s[1], center[1])
+                temp = self.metrics_euklidesowa(s[0], center[0], s[1], center[1])
 
                 #  Wyznacz us równy indeksowi najbliższego środka grupy dla s-tej próbki
                 if distant > temp:
@@ -52,8 +53,6 @@ class KMeans():
         return centers_group, groups
 
     def k_means(self, m=4, iterations=1):
-        plt.xlabel("x")
-        plt.ylabel("y")
 
         centers_group = []
         # wybierz losowo m różnych próbek
@@ -64,13 +63,17 @@ class KMeans():
 
         # wykonaj algorytm dla n-liczby iteracji
         groups = []
-        for i in range(iterations):
-            centers, groups = self.alg(centers_group)
-            if i == 0:
-                self.graph(groups, centers_group)
-            centers_group = centers
 
-        self.graph(groups, centers_group)
+        for i in range(iterations):
+
+            centers, groups = self.alg(centers_group)
+            # if i == 0:
+            #     self.graph(groups, centers_group)
+            self.graph(groups, centers_group)
+            centers_group = centers
+            self.iteracja += 1
+
+        return groups, centers_group
 
     def graph(self, groups, centers):
         # wykres
@@ -79,10 +82,27 @@ class KMeans():
                 group = np.array(group)
                 x = group[:, 0]
                 y = group[:, 1]
-                plt.plot(x, y, ".")
 
-        for center in centers:
-            x = center[0]
-            y = center[1]
-            plt.plot(x, y, "m+")
-        plt.show()
+                center = centers[i]
+                xc = center[0]
+                yc = center[1]
+
+                # x = np.append(x, xc)
+                # y = np.append(y, yc)
+
+                plt.plot(x, y, ".", label=str(i+1))
+                plt.plot(xc, yc, "m+")
+
+        # for center in centers:
+        #     x = center[0]
+        #     y = center[1]
+        #     plt.plot(x, y, "m+")
+        plt.legend()
+        plt.title("K-średnich iteracja: {0}".format(self.iteracja))
+        plt.xlabel("x")
+        plt.ylabel("y")
+        plt.pause(1)
+        plt.clf()
+
+
+
