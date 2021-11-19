@@ -34,14 +34,14 @@ samples_cov_to_number = system.samples_str_to_number(samples)
 # print(samples_cov_to_number)
 
 # -- lab3.2 --
-# samples = system.get_samples()
-# samples_cov_to_number = system.samples_str_to_number(samples)
+samples = system.get_samples()
+samples_cov_to_number = system.samples_str_to_number(samples)
 
 # alg = KMeans(samples_cov_to_number)
 # alg.k_means(iterations=11, m=4)
 
 fcm = CMeans(samples_cov_to_number)
-fcm.c_means(3, iterations=30)
+fcm.c_means(4, iterations=11)
 
 # lab 4
 # opo = OnePlusOne()

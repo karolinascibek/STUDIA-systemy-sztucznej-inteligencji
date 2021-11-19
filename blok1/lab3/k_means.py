@@ -87,16 +87,10 @@ class KMeans():
                 xc = center[0]
                 yc = center[1]
 
-                # x = np.append(x, xc)
-                # y = np.append(y, yc)
+                p = plt.plot(x, y, ".", label=str(i+1))
+                color = p[0].get_color()
+                plt.plot(xc, yc, "+", color=color)
 
-                plt.plot(x, y, ".", label=str(i+1))
-                plt.plot(xc, yc, "m+")
-
-        # for center in centers:
-        #     x = center[0]
-        #     y = center[1]
-        #     plt.plot(x, y, "m+")
         plt.legend()
         plt.title("K-średnich iteracja: {0}".format(self.iteracja))
         plt.xlabel("x")

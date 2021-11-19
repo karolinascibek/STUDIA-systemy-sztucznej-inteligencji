@@ -3,7 +3,6 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 class CMeans():
     def __init__(self, samples):
         self.samples = samples
@@ -44,6 +43,25 @@ class CMeans():
                 D[j, s] = d
         return D
 
+    def setColors(self, V):
+
+        wsp = np.random.random()
+        colors = np.random.rand(len(V), 4)
+        rgba_groups = []
+
+        rgba = colors
+
+        for c in colors:
+            group = []
+            for s in self.samples:
+                group.append(c)
+            rgba_groups.append(np.array(group))
+
+        return np.array(rgba_groups), np.array(rgba)
+
+
+
+
     def c_means(self, m, iterations=3, fcm_m=2):
         M = len(self.samples)
         n = len(self.samples[0])
@@ -52,25 +70,35 @@ class CMeans():
 
         #1.4 Wyliczenie każdej wartości w tablicy Uj, s(j=1..m; s = 1..M).
         U = self.calcutate_the_value_U(D, m, M, fcm_m)
-        print(U)
-
 
         # 1.5 Obliczenie środków grup Vj,i (j=1..m; i=1..n; m to liczba grup, n to liczba atrybutów)
         V = self.calculate_center_group(U, m, n, M, fcm_m)
 
         # 2. Główna pętla programu wykonywana przez zadaną liczbę iteracji.
+
+        # set colors to  graph
+        rgba_groups, rgba = self.setColors(V)
+
+        x = self.samples[:, 0]
+        y = self.samples[:, 1]
+
         for t in range(iterations):
             # wykres
-            x = self.samples[:, 0]
-            y = self.samples[:, 1]
-            plt.plot(x, y, ".")
+            # ustawienie kolorów dla grup
+            UT = U.T
+            for i in range(m):
+                # print(np.size(rgb))
+                rgba_groups[i, :, 3] = UT[:, i]
 
-            for center in V:
-                x = center[0]
-                y = center[1]
-                plt.plot(x, y, "+")
+            for iv, sv in enumerate(V):
+                plt.scatter(x, y, color=rgba_groups[iv], s=50, linewidths=1)
 
+            xV = V[:, 0]
+            yV = V[:, 1]
 
+            plt.scatter(xV, yV, color=rgba, marker="+", alpha=1)
+
+            plt.title("FCM , i:" + str(t))
             plt.xlabel("x")
             plt.ylabel("y")
             plt.pause(1)
