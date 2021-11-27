@@ -11,6 +11,7 @@ Skłąda się z dwóch bloków, kazdy blok zawiera kilka folderów z danego labo
     * Algorytm k-means
     * Algorytm c-means
     * Algorytm 1+1
+    * Algorytm μ+λ
     
 2. BLOK 2
     * nie rozpoczęty
