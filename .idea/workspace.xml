@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3461d076-cc22-4fa1-af75-5f0adbdd99a2" name="Default Changelist" comment="" />
+    <list default="true" id="3461d076-cc22-4fa1-af75-5f0adbdd99a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1/lab1/decision_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/lab1/decision_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1/lab3/c_means.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/lab3/c_means.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1/lab4/mu_plus_lambda.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/lab4/mu_plus_lambda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1/lab4/one_plus_one.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/lab4/one_plus_one.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="219Dd2mzENxcU3CerulmOncXCG3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +34,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blok1/lab4" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="D:/SSI/blok1VK" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -23,7 +43,7 @@
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.zad4">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sztuczna-iteligencja" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -45,8 +65,96 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="zad1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok1/zad1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zad2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok1/zad2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zad3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok1/zad3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zad4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok1/zad4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zad4" />
+        <item itemvalue="Python.zad3" />
+        <item itemvalue="Python.zad2" />
+        <item itemvalue="Python.zad1" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -65,21 +173,45 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom" timestamp="1637359024633">
+    <state x="804" y="123" key="FileChooserDialogImpl" timestamp="1637952246594">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1637359024633" />
-    <state width="1345" height="131" key="GridCell.Tab.0.center" timestamp="1637359024633">
+    <state x="804" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1637952246594" />
+    <state width="1345" height="2" key="GridCell.Tab.0.bottom" timestamp="1637970702210">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1637359024633" />
-    <state width="1345" height="131" key="GridCell.Tab.0.left" timestamp="1637359024633">
+    <state width="1345" height="2" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1637970702210" />
+    <state width="1345" height="2" key="GridCell.Tab.0.center" timestamp="1637970702210">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1637359024633" />
-    <state width="1345" height="131" key="GridCell.Tab.0.right" timestamp="1637359024633">
+    <state width="1345" height="2" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1637970702210" />
+    <state width="1345" height="2" key="GridCell.Tab.0.left" timestamp="1637970702209">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="131" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1637359024633" />
+    <state width="1345" height="2" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1637970702209" />
+    <state width="1345" height="2" key="GridCell.Tab.0.right" timestamp="1637970702210">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="2" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1637970702210" />
+    <state width="1345" height="227" key="GridCell.Tab.1.bottom" timestamp="1637970628432">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1637970628432" />
+    <state width="1345" height="227" key="GridCell.Tab.1.center" timestamp="1637970628431">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1637970628431" />
+    <state width="1345" height="227" key="GridCell.Tab.1.left" timestamp="1637970628431">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1637970628431" />
+    <state width="1345" height="227" key="GridCell.Tab.1.right" timestamp="1637970628432">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1637970628432" />
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1637970605232">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1637970605232" />
   </component>
 </project>

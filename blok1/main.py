@@ -1,7 +1,9 @@
 from blok1.lab1.decision_system import DecisionSystem
 from blok1.lab3.k_means import KMeans
 from  blok1.lab4.one_plus_one import OnePlusOne
+from  blok1.lab4.mu_plus_lambda import MuPlusLambda
 from blok1.lab3.c_means import CMeans
+from blok1.lab2.graph_smiley import GraphSmiley
 
 
 system = DecisionSystem()
@@ -15,10 +17,11 @@ system = DecisionSystem()
 
 
 # -- lab2 --
-# system.view_the_graph_smial(0, 0, 16)
+# graph = GraphSmiley()
+# graph.display(0, 0, 16)
 # system.load_samples("lab2/iris.txt", "\t")
 # system.load_headers("lab2/iris-type.txt", '\t')
-# # system.show()
+# system.show()
 # system.display()
 
 
@@ -40,10 +43,16 @@ samples_cov_to_number = system.samples_str_to_number(samples)
 # alg = KMeans(samples_cov_to_number)
 # alg.k_means(iterations=11, m=4)
 
-fcm = CMeans(samples_cov_to_number)
-fcm.c_means(4, iterations=11)
+# fcm = CMeans(samples_cov_to_number)
+# fcm.c_means(3, iterations=20)
 
-# lab 4
+# -- lab 4.1 --
 # opo = OnePlusOne()
 # opo.one_plus_one()
+
+# -- lab 4.2 --
+# mpl = MuPlusLambda()
+# mpl.mu_plus_lambda()
+
+
 

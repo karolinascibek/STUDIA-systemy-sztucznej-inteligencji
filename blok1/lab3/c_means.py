@@ -45,7 +45,6 @@ class CMeans():
 
     def setColors(self, V):
 
-        wsp = np.random.random()
         colors = np.random.rand(len(V), 4)
         rgba_groups = []
 
@@ -91,7 +90,7 @@ class CMeans():
                 rgba_groups[i, :, 3] = UT[:, i]
 
             for iv, sv in enumerate(V):
-                plt.scatter(x, y, color=rgba_groups[iv], s=50, linewidths=1)
+                plt.scatter(x, y, color=rgba_groups[iv], s=50, linewidths=1, label="grupa "+str(iv+1))
 
             xV = V[:, 0]
             yV = V[:, 1]
@@ -101,6 +100,7 @@ class CMeans():
             plt.title("FCM , i:" + str(t))
             plt.xlabel("x")
             plt.ylabel("y")
+            plt.legend()
             plt.pause(1)
             plt.clf()
 

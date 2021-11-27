@@ -43,9 +43,9 @@ class DecisionSystem():
         self.__class_type = self.get_class_atrs_from_headers()
 
     # zadnie 2 lab 2
-    def view_the_graph_smial(self, a, b, r):
-        graph = GraphSmiley()
-        graph.display(a, b, r)
+    # def view_the_graph_smail(self, a, b, r):
+    #     graph = GraphSmiley()
+    #     graph.display(a, b, r)
 
     # lab2 zadanie 4
     def draw_chart(self, class_type):
@@ -96,8 +96,10 @@ class DecisionSystem():
         for i in range(2):
             for j in range(2):
                 for index_class, value in enumerate(self.__class_type):
-                    samples = self.filter_samples_by_class(int(value[0]))
+                    samples = self.filter_samples_by_class(value[0])
+                    samples = self.samples_str_to_number(samples)
                     # samples = self.sort_by_column(samples, X[chart])
+
                     ax[i, j].plot(samples[:, X[chart]], samples[:, Y[chart]], col[index_class], label=value[1])
 
 

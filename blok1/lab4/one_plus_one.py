@@ -20,9 +20,13 @@ class OnePlusOne():
 
             # wykres
             txt = "i: "+str(i)+", r: "+str(rozrzut)
-            plt.plot(X, Y)
-            plt.annotate(txt, (x, y))
-            plt.pause(0.3)
+            plt.plot(X, Y, label="f(x) = sin(x/10)*np.sin(x/200)")
+            plt.plot(x, y, ".r", label="max(f(x))")
+            plt.title("Algorytm 1+1\ni: {0}, r: {1}".format(i, round(rozrzut, 2)))
+            plt.legend()
+            plt.xlabel("x")
+            plt.ylabel("y")
+            plt.pause(0.5)
             plt.clf()
 
 
