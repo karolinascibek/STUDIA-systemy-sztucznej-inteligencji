@@ -7,11 +7,11 @@ system = DecisionSystem()
 
 # -- lab 4.1 --
 # opo = OnePlusOne()
-# opo.one_plus_one()
+# opo.one_plus_one(l_iteracji=100)
 
 # -- lab 4.2 --
 mpl = MuPlusLambda()
-mpl.mu_plus_lambda(m=6, l=12)
+mpl.mu_plus_lambda(m=3, l=10)
 
 
 

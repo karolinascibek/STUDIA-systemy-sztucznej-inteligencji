@@ -6,15 +6,15 @@ system = DecisionSystem()
 
 # -- lab2 --
 
-# graph = GraphSmiley()
-# graph.display(0, 0, 16)
+graph = GraphSmiley()
+graph.display(0, 0, 2)
 
 # wykresy
 
 system.load_samples("lab2/iris.txt", "\t")
 system.load_headers("lab2/iris-type.txt", '\t')
-system.show()
-# system.display()
+# system.show()
+system.display()
 
 
 

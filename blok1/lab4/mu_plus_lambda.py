@@ -40,10 +40,7 @@ class MuPlusLambda():
             a = np.random.randint(-mutation_level, mutation_level)
             b = np.random.randint(-mutation_level, mutation_level)
             mutation = np.array([a, b])
-            # print(mutation)
-            # print("mutacje: ", mutation)
 
-            # print(mutation)
             next_generation[t] = os_n + mutation
         return next_generation
 
@@ -75,12 +72,15 @@ class MuPlusLambda():
         # losuj pule osobników rodzicielskich
         parents = np.random.rand(m, 2) * x_max
 
+        # wykres funkcji 3d
+        # fig, ax = plt.subplots()
+        # ax = plt.axes(projection='3d')
+        # surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+        # plt.pause(3)
         fig, ax = plt.subplots()
-
         # pętla głowna
         for i in range(iterations):
 
-            # surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
 
             # ocena funkcją przystosowania rodziców
             grade_parents = self.ratings_chaps(parents)
@@ -93,7 +93,7 @@ class MuPlusLambda():
             # ocena funkcją przystosowania puli lambda potomkow
             grade_next_generation = self.ratings_chaps(next_generation)
 
-            # połaczenie puli potomków z pólą rodziców wybór mu najlepszych
+            # połaczenie puli potomków z pólą rodziców
             p_plus_g = np.concatenate([parents, next_generation])
             grade_p_plus_g = np.concatenate([grade_parents, grade_next_generation])
 
@@ -111,8 +111,7 @@ class MuPlusLambda():
             # najlepszy osobnik z nowej puli rodzicielskiej
             os_n = parents[0]
 
-            # wykres
-
+            # cd. wykresu
             plt.title("Algorytm μ+λ")
             plt.xlabel("x1")
             plt.ylabel("x2")

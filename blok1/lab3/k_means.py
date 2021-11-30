@@ -2,6 +2,7 @@ import random
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+import copy
 
 
 class KMeans():
@@ -12,31 +13,21 @@ class KMeans():
     def metrics_euklidesowa(self, x1, x2, y1, y2):
         return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
-    def alg(self, centers):
-        centers_group = centers
-        groups = []
-        for cg in centers_group:
-            groups.append([])
+    def calculate_distans(self, sample, centers_group):
+        distants = []
+        first_center = centers_group[0]
+        distant = self.metrics_euklidesowa(sample[0], first_center[0], sample[1], first_center[1])
+        distants.append(distant)
+        for idx_c, center in enumerate(centers_group[1: len(centers_group)]):
+            distant = self.metrics_euklidesowa(sample[0], center[0], sample[1], center[1])
+            distants.append(distant)
+            #  Wyznacz us równy indeksowi najbliższego środka grupy dla s-tej próbki
+            # if distant > temp:
+            #     distant = temp
+            #     idx_group = idx_c + 1
+        return distants
 
-        # pętla po wszytkich M probkach, s to indexs aktualnej probki
-        for s in self.samples:
-            first_center = centers_group[0]
-            idx_group = 0
-
-            # wylicz dleglosc miedzy probka s a każdym środkiem grupy V
-            distant = self.metrics_euklidesowa(s[0], first_center[0], s[1], first_center[1])
-            for idx_c, center in enumerate(centers_group[1: len(centers_group)]):
-                temp = self.metrics_euklidesowa(s[0], center[0], s[1], center[1])
-
-                #  Wyznacz us równy indeksowi najbliższego środka grupy dla s-tej próbki
-                if distant > temp:
-                    distant = temp
-                    idx_group = idx_c + 1
-
-            # posortowanie próbek względem grup
-            groups[idx_group].append(s)
-
-        # ustalamy nowe środki
+    def set_new_centers(self, groups):
         centers_group = []
         for group in groups:
             if group:
@@ -48,6 +39,28 @@ class KMeans():
                 centers_group.append(np.array([new_center_x, new_center_y]))
             else:
                 print("pusta grupa")
+        return centers_group
+
+    def alg(self, centers):
+        centers_group = copy.deepcopy( centers)
+        groups = []
+        for cg in centers_group:
+            groups.append([])
+
+        # pętla po wszytkich M probkach, s to indexs aktualnej probki
+        for s in self.samples:
+
+            # wylicz dleglosc miedzy probka s a każdym środkiem grupy V
+            distants = self.calculate_distans(s, centers_group)
+
+            # index grupy dla której odległosc jest najbliższa środka
+            idx_group = np.argmin(distants)
+
+            # posortowanie próbek względem grup, przydzielenie próbki do grupy
+            groups[idx_group].append(s)
+
+        # ustalamy nowe środki
+        centers_group = self.set_new_centers(groups)
 
         # print("nowe środki: ", np.array(centers_group))
         return centers_group, groups

@@ -16,18 +16,22 @@ class OnePlusOne():
         y = self.adaption_function(x)
         Y = self.adaption_function(X)
 
+        labels = ["f(x) = sin(x/10)*np.sin(x/200)", "krok", "max(f(x))"]
+        line1, = plt.plot(X, Y, label="f(x) = sin(x/10)*np.sin(x/200)")
+        plt.xlabel("x")
+        plt.ylabel("y")
+
         for i in range(l_iteracji):
 
             # wykres
             txt = "i: "+str(i)+", r: "+str(rozrzut)
-            plt.plot(X, Y, label="f(x) = sin(x/10)*np.sin(x/200)")
-            plt.plot(x, y, ".r", label="max(f(x))")
             plt.title("Algorytm 1+1\ni: {0}, r: {1}".format(i, round(rozrzut, 2)))
-            plt.legend()
-            plt.xlabel("x")
-            plt.ylabel("y")
+            plt.plot(x, y, ".g", label="krok")
+            if i == 0:
+                line2, = plt.plot(x, y, ".g")
+                plt.legend(loc="upper left")
+
             plt.pause(0.5)
-            plt.clf()
 
 
             r = np.random.randint(-rozrzut, rozrzut + 1)
@@ -45,9 +49,9 @@ class OnePlusOne():
                 rozrzut *= wsp_przyrostu
             else:
                 rozrzut /= wsp_przyrostu
-
-
-
+        line3,  = plt.plot(x, y, "or")
+        plt.legend([line1, line2, line3], labels, loc="upper left")
+        plt.show()
 
 
 

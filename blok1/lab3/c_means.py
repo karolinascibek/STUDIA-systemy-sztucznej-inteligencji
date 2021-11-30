@@ -2,6 +2,7 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import cm
 
 class CMeans():
     def __init__(self, samples):
@@ -44,7 +45,6 @@ class CMeans():
         return D
 
     def setColors(self, V):
-
         colors = np.random.rand(len(V), 4)
         rgba_groups = []
 
@@ -57,9 +57,6 @@ class CMeans():
             rgba_groups.append(np.array(group))
 
         return np.array(rgba_groups), np.array(rgba)
-
-
-
 
     def c_means(self, m, iterations=3, fcm_m=2):
         M = len(self.samples)
@@ -76,7 +73,7 @@ class CMeans():
         # 2. Główna pętla programu wykonywana przez zadaną liczbę iteracji.
 
         # set colors to  graph
-        rgba_groups, rgba = self.setColors(V)
+        # rgba_groups, rgba = self.setColors(V)
 
         x = self.samples[:, 0]
         y = self.samples[:, 1]
@@ -84,23 +81,20 @@ class CMeans():
         for t in range(iterations):
             # wykres
             # ustawienie kolorów dla grup
-            UT = U.T
-            for i in range(m):
-                # print(np.size(rgb))
-                rgba_groups[i, :, 3] = UT[:, i]
+            # UT = U.T
+            # for i in range(m):
+            #     # print(np.size(rgb))
+            #     rgba_groups[i, :, 3] = UT[:, i]
 
-            for iv, sv in enumerate(V):
-                plt.scatter(x, y, color=rgba_groups[iv], s=50, linewidths=1, label="grupa "+str(iv+1))
-
-            xV = V[:, 0]
-            yV = V[:, 1]
-
-            plt.scatter(xV, yV, color=rgba, marker="+", alpha=1)
+            for group, sv in enumerate(V):
+                sc = plt.scatter(x, y, cmap=cm.coolwarm, alpha=U[group], s=50, linewidths=1)
+                color = sc.get_facecolors()[0]
+                plt.scatter(V[group, 0], V[group, 1], color=color, marker="+", alpha=1, label="środek grupy "+str(group+1))
 
             plt.title("FCM , i:" + str(t))
             plt.xlabel("x")
             plt.ylabel("y")
-            plt.legend()
+            plt.legend(loc="upper right")
             plt.pause(1)
             plt.clf()
 
