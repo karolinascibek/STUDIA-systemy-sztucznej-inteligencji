@@ -4,13 +4,13 @@ from blok1.lab2.graph_smiley import GraphSmiley
 
 system = DecisionSystem()
 
-# -- lab2 --
+# -- lab2.1 --
 
-graph = GraphSmiley()
-graph.display(0, 0, 2)
+# graph = GraphSmiley()
+# graph.display(0, 0, 4)
 
 # wykresy
-
+# -- lab2.2
 system.load_samples("lab2/iris.txt", "\t")
 system.load_headers("lab2/iris-type.txt", '\t')
 # system.show()

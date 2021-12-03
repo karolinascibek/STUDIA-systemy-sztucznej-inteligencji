@@ -31,7 +31,9 @@ class GraphSmiley():
         axes.set_aspect(1)
         axes.grid()
         plt.legend(loc="upper right")
-        plt.title("Circle")
+        plt.title("")
+        plt.xlabel("x")
+        plt.ylabel("y")
         plt.show()
 
     def set_pointX(self, a, r):

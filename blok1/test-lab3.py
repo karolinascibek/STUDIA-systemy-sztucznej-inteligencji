@@ -21,10 +21,11 @@ samples = system.get_samples()
 samples_cov_to_number = system.samples_str_to_number(samples)
 
 alg = KMeans(samples_cov_to_number)
-alg.k_means(iterations=10, m=2)
+alg.k_means(iterations=10, m=3)
+
 
 # fcm = CMeans(samples_cov_to_number)
-# fcm.c_means(3, iterations=30)
+# fcm.c_means(4, iterations=30)
 
 
 

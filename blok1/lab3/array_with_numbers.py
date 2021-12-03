@@ -1,2 +1,0 @@
-class ArrayWithNumbers():
-    pass
