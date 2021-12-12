@@ -103,8 +103,8 @@ class DecisionSystem():
                     ax[i, j].plot(samples[:, X[chart]], samples[:, Y[chart]], col[index_class], label=value[1])
 
 
-                ax[i, j].set_xlabel('atrybut '+str(X[chart]+1))
-                ax[i, j].set_ylabel('atrybut '+str(Y[chart]+1))
+                ax[i, j].set_xlabel(str(self.__headers[X[chart]][0]))
+                ax[i, j].set_ylabel(str(self.__headers[Y[chart]][0]))
                 ax[i, j].legend(loc="upper right")
                 chart = chart + 1
         plt.show()

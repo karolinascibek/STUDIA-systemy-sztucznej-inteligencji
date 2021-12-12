@@ -136,3 +136,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# custom folder
+.block2/lab6/tutorial-tkinter

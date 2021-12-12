@@ -13,7 +13,7 @@ system = DecisionSystem()
 # -- lab2.2
 system.load_samples("lab2/iris.txt", "\t")
 system.load_headers("lab2/iris-type.txt", '\t')
-# system.show()
+system.show()
 system.display()
 
 
