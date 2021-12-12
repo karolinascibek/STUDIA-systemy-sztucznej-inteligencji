@@ -14,7 +14,8 @@ Skłąda się z dwóch bloków, kazdy blok zawiera kilka folderów z danego labo
     * Algorytm μ+λ
     
 2. BLOK 2
-    * nie rozpoczęty
+    * Algorytm zachłannego dopasowania punktu
+    * sieć Hopfielda -  w trakcie
 
 
 ### Technologie 

@@ -4,11 +4,8 @@
     <list default="true" id="3461d076-cc22-4fa1-af75-5f0adbdd99a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1/lab1/decision_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/lab1/decision_system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1/test-lab2.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/test-lab2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1/test-lab3.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/test-lab3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1/test-lab4.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok1/test-lab4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blok1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/blok1.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
