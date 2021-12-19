@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from blok2.lab6.greedy_point import GreedyPoint
+from blok2.lab7.hopfield_network import HopfieldNetwork
 import copy
 
 
@@ -16,15 +16,12 @@ def set_size_bitmap(w, k):
 
 
 def click_item_on_listbox(event):
-    try:
-        idx = event.widget.curselection()[0]
-        window_bitmap = Tk()
-        canvas_bitmap = Canvas(window_bitmap, bg="white", width=canvas_width, height=canvas_height, bd=0, highlightthickness=0,
-                        relief=GROOVE)
-        canvas_bitmap.pack()
-        dispaly_on_canvas(BITMAPS[idx], canvas_bitmap)
-    except:
-        infoLabel.config(text="Baza obrazów jest pusta", fg="red")
+    idx = event.widget.curselection()[0]
+    window_bitmap = Tk()
+    canvas_bitmap = Canvas(window_bitmap, bg="white", width=canvas_width, height=canvas_height, bd=0, highlightthickness=0,
+                    relief=GROOVE)
+    canvas_bitmap.pack()
+    dispaly_on_canvas(BITMAPS[idx], canvas_bitmap)
 
 
 def calculate_position_for_square(event):
@@ -70,6 +67,7 @@ def dispaly_on_canvas(array, canvas):
             if el == 0:
                 canvas.create_rectangle(y, x, y + piksel, x + piksel, fill="white", outline="")
 
+
 def clear_canvas():
     global DRAWN_BITMAP
     DRAWN_BITMAP = set_size_bitmap(5, 5)
@@ -77,17 +75,30 @@ def clear_canvas():
 
 
 def match_bitmap():
-    if len(BITMAPS) != 0 and len(DRAWN_BITMAP) != 0:
-        gp = GreedyPoint(DRAWN_BITMAP, BITMAPS)
-        measure, idx = gp.alg()
-        dispaly_on_canvas(BITMAPS[idx], canvas_result)
-        infoLabel.config(text="bitmapa"+str(idx+1), fg="green")
+    global BITMAPS,  BITMAP_TEST
+    bitmaps_pattern = copy.deepcopy(BITMAPS)
+    bitmap_test = copy.deepcopy(BITMAP_TEST)
+    if len(BITMAPS) != 0 and len(BITMAP_TEST) != 0:
+
+        hn = HopfieldNetwork(bitmaps_pattern, bitmap_test)
+        hn.teach_list_pictures()
+        bitmap_result = hn.recognize_the_picture()
+
+        #dispaly_on_canvas(bitmap_result, canvas_result)
+        # przekopiowanie aktualnego wyniku na bitmape testowo
+        BITMAP_TEST= copy.deepcopy(bitmap_result)
+        dispaly_on_canvas(BITMAP_TEST, canvas_test)
+        print(bitmap_result)
+        # wyświeltenie na canvasie testowym, aktualny wynik algorytmu
+        infoLabel.config(text="bitmapa", fg="green")
     else:
         infoLabel.config(text="Nie ustalono bitmap wzorcowych lub bimapy testowej!!", fg="red")
 
 
 def dispaly_on_canvas_test():
+    global BITMAP_TEST
     dispaly_on_canvas(DRAWN_BITMAP, canvas_test)
+    BITMAP_TEST = copy.deepcopy(DRAWN_BITMAP)
 
 
 
@@ -95,6 +106,7 @@ def dispaly_on_canvas_test():
 
 BITMAPS = []
 DRAWN_BITMAP = set_size_bitmap(5, 5)
+BITMAP_TEST = set_size_bitmap(5, 5)
 counter_bitmaps = 0
 
 window_width = 600
@@ -104,8 +116,13 @@ window = Tk()
 
 # -------------------- first frame ---------------
 frame1 = Frame(window)
-frame1.grid(row=0, column=0, sticky="w" )
+frame1.pack()
 
+add_button = Button(frame1, text="Dodaj do bazy", padx=10, pady=10, width=20, command=add_bitmap)
+add_button.grid(row=0, column=0)
+
+recognize_button = Button(frame1, text="Ustwa jako bitmapa testowa", padx=10, pady=10, width=20, command=dispaly_on_canvas_test)
+recognize_button.grid(row=0, column=1)
 
 # -------------------- second frame -------------
 canvas_width = 200
@@ -113,40 +130,24 @@ canvas_height = 200
 piksel = 40
 
 frame2 = Frame(window, pady=10)
-frame2.grid(row=1, column=0, sticky="w" )
-
-# --- Buttons -----------------------------------
-
-add_button = Button(frame1, text="Dodaj do bazy", padx=10, pady=10, width=20, command=add_bitmap)
-add_button.grid(row=4, column=0, sticky="e", pady=[10,0])
-
-recognize_button = Button(frame1, text="Ustwa jako bitmapa testowa", padx=10, pady=10, width=20, command=dispaly_on_canvas_test)
-recognize_button.grid(row=4, column=1, sticky="w", pady=[10, 0], padx=[3, 0])
+frame2.pack()
 
 
-
-
-# -------------------- draw on canvas section ------------
-label_canvas = Label(frame1, text="kliknij aby rysować")
-label_canvas.grid(row=1, column=0)
-
-canvas = Canvas(frame1, bg="white", width=canvas_width, height=canvas_height, bd=0, highlightthickness=0, relief=GROOVE )
+# -------------------- canvas section ------------
+canvas = Canvas(frame2, bg="white", width=canvas_width, height=canvas_height, bd=0, highlightthickness=0, relief=GROOVE )
 canvas.bind("<Button-1>", draw_on_canvas)
 canvas.bind("<Button-3>", wipe_off_canvas)
-canvas.grid(row=2, column=0, sticky="w", padx=[3, 0])
+canvas.grid(row=2, column=0)
 
 
 # -------------------- List Box section ------------
-label_canvas = Label(frame1, text="Baza obrazków")
-label_canvas.grid(row=1, column=1)
-
 list_items = StringVar()
-listbox = Listbox(frame1, width=20, height=12, listvariable=list_items)
+listbox = Listbox(frame2, width=20, height=12, listvariable=list_items)
 listbox.bind("<<ListboxSelect>>", click_item_on_listbox)
-listbox.grid(row=2, column=1, sticky="wnse", padx=[3, 0])
+listbox.grid(row=2, column=1, )
 
 # -------------------- Canvas Clear Bottom Section  ------------
-algButton = Button(frame1, text="Wyczyść", padx=10, command=clear_canvas)
+algButton = Button(frame2, text="Wyczyść", padx=10, command=clear_canvas)
 algButton.grid(row=3, column=0)
 
 
