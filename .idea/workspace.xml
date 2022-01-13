@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3461d076-cc22-4fa1-af75-5f0adbdd99a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/blok1.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blok2/lab6/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok2/lab6/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blok2/lab6/greedy_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/blok2/lab6/greedy_point.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,41 +30,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blok2/lab6/tutorial-tkinter" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Ścibek_Karolina_SSI_gr2_blok2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja\Ścibek_Karolina_SSI_gr2_blok2" />
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja\blok2\lab6\tutorial-tkinter" />
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja" />
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja\blok1\lab4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja" />
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja\blok2\lab6\tutorial-tkinter" />
       <recent name="C:\Users\Karolina\PycharmProjects\sztuczna-iteligencja\blok1VO" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
-    <configuration name="animation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="sztuczna-iteligencja" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok2/lab6/tutorial-tkinter" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok2/lab6/tutorial-tkinter/animation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.app (3)">
     <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sztuczna-iteligencja" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +59,69 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok2/lab7/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Algorytm zachlannego dopasowania punktu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Algorytm zachlannego dopasowania punktu/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Algorytm_zachlannego_dopasowania_punktu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Algorytm_zachlannego_dopasowania_punktu/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sztuczna-iteligencja" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Siec_Hopfielda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ścibek_Karolina_SSI_gr2_blok2/Siec_Hopfielda/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,55 +151,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="sztuczna-iteligencja" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok2/lab7" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok2/lab7/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="sztuczna-iteligencja" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blok2/lab6" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blok2/lab6/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.app" />
+        <item itemvalue="Python.app (3)" />
+        <item itemvalue="Python.app (4)" />
+        <item itemvalue="Python.app (2)" />
         <item itemvalue="Python.app (1)" />
-        <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.animation" />
+        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -179,26 +179,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="754" y="119" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1639248625211" />
-    <state x="804" y="123" key="FileChooserDialogImpl" timestamp="1637952246594">
+    <state x="804" y="123" key="FileChooserDialogImpl" timestamp="1642023660025">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="804" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1637952246594" />
-    <state width="1345" height="137" key="GridCell.Tab.0.bottom" timestamp="1639947011913">
+    <state x="804" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1642023660025" />
+    <state width="1241" height="186" key="GridCell.Tab.0.bottom" timestamp="1642023661641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="137" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1639947011913" />
-    <state width="1345" height="137" key="GridCell.Tab.0.center" timestamp="1639947011913">
+    <state width="1241" height="186" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1642023661641" />
+    <state width="1241" height="186" key="GridCell.Tab.0.center" timestamp="1642023661641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="137" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1639947011913" />
-    <state width="1345" height="137" key="GridCell.Tab.0.left" timestamp="1639947011913">
+    <state width="1241" height="186" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1642023661641" />
+    <state width="1241" height="186" key="GridCell.Tab.0.left" timestamp="1642023661640">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="137" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1639947011913" />
-    <state width="1345" height="137" key="GridCell.Tab.0.right" timestamp="1639947011913">
+    <state width="1241" height="186" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1642023661640" />
+    <state width="1241" height="186" key="GridCell.Tab.0.right" timestamp="1642023661641">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="137" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1639947011913" />
+    <state width="1241" height="186" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1642023661641" />
     <state width="1345" height="247" key="GridCell.Tab.1.bottom" timestamp="1639525454158">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -219,10 +219,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="691" height="377" key="XDebugger.FullValuePopup/0.0.1366.738@0.0.1366.738" timestamp="1639478062886" />
-    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1639932681846">
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1641721776360">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1639932681846" />
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1641721776360" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

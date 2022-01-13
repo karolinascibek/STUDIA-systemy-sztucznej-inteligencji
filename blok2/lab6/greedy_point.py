@@ -53,13 +53,15 @@ class GreedyPoint():
 
     def measure_of_improbability2(self, bitmap_A, bitmap_B):
         measure = 0
-        for i, rowA in enumerate(bitmap_A):
-            for j, elA in enumerate(rowA):
-                min_distant = len(bitmap_A) * len(rowA)
+        for xa, rowA in enumerate(bitmap_A):
+            for ya, elA in enumerate(rowA):
+
                 if elA == 1:
-                    min_distant = self.check_vector(bitmap_B[i], i, j, min_distant, pos="r")
-                    column = self.cut_column(bitmap_B, j)
-                    min_distant = self.check_vector(column, i, j, min_distant, pos="c")
+                    min_distant = len(bitmap_A) * len(rowA)
+                    for xb, rowB in enumerate(bitmap_B):
+                        for yb, elB in enumerate(rowB):
+                            if elB == 1:
+                                min_distant = self.calculate_min_distant(xa, xb, ya, yb, min_distant)
                     measure += min_distant
         return measure
 
@@ -67,11 +69,12 @@ class GreedyPoint():
         min_measure = - max(self.size[0], self.size[1])**3
         idx = 0
         for i, bitmap in enumerate(self.bitmaps):
-            measure1 = self.measure_of_improbability(bitmap, self.bitmap_test)
-            measure2 = self.measure_of_improbability(self.bitmap_test, bitmap)
+            measure1 = self.measure_of_improbability2(bitmap, self.bitmap_test)
+            measure2 = self.measure_of_improbability2(self.bitmap_test, bitmap)
             #print("measure 1:  ", measure1)
             #print("measure 2:  ", measure2)
             measure = - measure1 - measure2
+            print("measure: ", measure)
             if min_measure < measure:
                 min_measure = measure
                 idx = i
